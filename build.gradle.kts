@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.rrin.nextskill.s3starter"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -13,9 +13,9 @@ repositories {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.r-rin.nextskill"
+            groupId = "com.github.rrin.nextskill.s3starter"
             artifactId = "spring-boot-nextskill-aws-s3-starter"
-            version = "1.0.0"
+            version = "1.0.1"
 
             from(components["java"])
         }
