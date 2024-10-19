@@ -23,7 +23,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/r-rin/")
+            url = uri("https://maven.pkg.github.com/r-rin/spring-boot-nextskill-aws-s3-starter")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
