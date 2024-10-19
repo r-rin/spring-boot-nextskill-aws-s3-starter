@@ -15,7 +15,7 @@ import java.io.File;
 import java.nio.file.Paths;
 
 @Service
-public class S3Service {
+public class S3Service implements IS3Service{
 
     private final S3Properties s3Properties;
     private final S3Client s3Client;
@@ -58,9 +58,7 @@ public class S3Service {
                     .key(key)
                     .build();
 
-            File downloadFile = new File(downloadPath);
-
-            s3Client.getObject(getObjectRequest, downloadFile.toPath());
+            s3Client.getObject(getObjectRequest, Paths.get(downloadPath));
             System.out.println("File downloaded from S3 bucket: " + s3Properties.getBucketName());
         } catch (S3Exception e) {
             System.err.println(e.getMessage());

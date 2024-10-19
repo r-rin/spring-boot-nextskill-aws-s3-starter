@@ -13,7 +13,7 @@ repositories {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.rrin.nextskill.s3starter"
+            groupId = "com.github.r-rin.nextskill.s3starter"
             artifactId = "spring-boot-nextskill-aws-s3-starter"
             version = "1.0.1"
 
@@ -23,7 +23,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/r-rin/spring-boot-nextskill-aws-s3-starter")
+            url = uri("https://maven.pkg.github.com/r-rin/")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
